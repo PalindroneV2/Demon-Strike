@@ -7,7 +7,7 @@ maps
 	
 	MAP02
 	{
-		viewpositionx = 1937.358f;
+		viewpositionx = 285.0493f;
 		
 		grid
 		{
@@ -41,13 +41,13 @@ maps
 			stderriserror = true;
 		}
 		scriptcompiler = "zdoom_acs.cfg";
-		defaultfloortexture = "FLOOR0_1";
+		defaultfloortexture = "FLOOR0_5";
 		defaultbottomtexture = "STARTAN2";
 		defaulttoptexture = "STARTAN2";
 		defaultwalltexture = "STARTAN2";
-		viewpositiony = 1090.073f;
+		viewpositiony = 2300.472f;
 		overrideceilheight = false;
-		viewscale = 0.2847132f;
+		viewscale = 3.925011f;
 		
 		reloadresourcepostcommand
 		{
@@ -65,7 +65,7 @@ maps
 		custombrightness = 196;
 		uselongtexturenames = false;
 		overridefloorheight = false;
-		defaultceiltexture = "CEIL1_1";
+		defaultceiltexture = "CEIL3_6";
 		overridefloortexture = false;
 		overrideceiltexture = false;
 		
