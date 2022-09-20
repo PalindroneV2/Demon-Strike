@@ -7,7 +7,7 @@ maps
 	
 	MAP02
 	{
-		viewpositionx = 285.0493f;
+		viewpositionx = 265.6347f;
 		
 		grid
 		{
@@ -42,12 +42,12 @@ maps
 		}
 		scriptcompiler = "zdoom_acs.cfg";
 		defaultfloortexture = "FLOOR0_5";
-		defaultbottomtexture = "STARTAN2";
-		defaulttoptexture = "STARTAN2";
-		defaultwalltexture = "STARTAN2";
-		viewpositiony = 2300.472f;
+		defaultbottomtexture = "STONE2";
+		defaulttoptexture = "STONE2";
+		defaultwalltexture = "STONE2";
+		viewpositiony = 1810.981f;
 		overrideceilheight = false;
-		viewscale = 3.925011f;
+		viewscale = 3.92501f;
 		
 		reloadresourcepostcommand
 		{
@@ -65,7 +65,7 @@ maps
 		custombrightness = 196;
 		uselongtexturenames = false;
 		overridefloorheight = false;
-		defaultceiltexture = "CEIL3_6";
+		defaultceiltexture = "CEIL3_5";
 		overridefloortexture = false;
 		overrideceiltexture = false;
 		
@@ -136,9 +136,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 484.4974f;
-		viewpositiony = -858.6956f;
-		viewscale = 1.069071f;
+		viewpositionx = 590.3638f;
+		viewpositiony = -302.5206f;
+		viewscale = 0.2214859f;
 		
 		reloadresourceprecommand
 		{
@@ -199,8 +199,8 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 3245;
-				firstvisibleline = 121;
+				caretposition = 2916;
+				firstvisibleline = 120;
 				activetab = true;
 			}
 		}
