@@ -7,7 +7,7 @@ maps
 	
 	MAP02
 	{
-		viewpositionx = 2095.814f;
+		viewpositionx = 237.3834f;
 		
 		grid
 		{
@@ -45,9 +45,9 @@ maps
 		defaultbottomtexture = "STONE2";
 		defaulttoptexture = "STONE2";
 		defaultwalltexture = "STONE2";
-		viewpositiony = 530.5129f;
+		viewpositiony = 1723.063f;
 		overrideceilheight = false;
-		viewscale = 2.322474f;
+		viewscale = 1.057103f;
 		
 		reloadresourcepostcommand
 		{
@@ -80,21 +80,22 @@ maps
 			
 			document0
 			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				activetab = true;
-			}
-			
-			document1
-			{
 				filename = "DIALOGUE";
 				hash = 3588187714;
 				resource;
 				tabtype = 0;
 				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 339;
+				activetab = true;
 			}
 		}
 	}
