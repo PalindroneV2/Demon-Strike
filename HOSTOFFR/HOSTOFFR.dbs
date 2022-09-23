@@ -7,7 +7,7 @@ maps
 	
 	MAP02
 	{
-		viewpositionx = 237.3834f;
+		viewpositionx = 1885.5f;
 		
 		grid
 		{
@@ -45,9 +45,9 @@ maps
 		defaultbottomtexture = "STONE2";
 		defaulttoptexture = "STONE2";
 		defaultwalltexture = "STONE2";
-		viewpositiony = 1723.063f;
+		viewpositiony = 2425.713f;
 		overrideceilheight = false;
-		viewscale = 1.057103f;
+		viewscale = 1.374231f;
 		
 		reloadresourcepostcommand
 		{
@@ -94,7 +94,8 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 339;
+				caretposition = 2056;
+				firstvisibleline = 55;
 				activetab = true;
 			}
 		}
