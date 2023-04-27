@@ -1,0 +1,163 @@
+#include "zcommon.acs"
+
+script 1 (void)
+{ // BOX ROOM TO MANCUBUS
+	if(ThingCount(T_NONE,310)==0) {
+		Floor_LowerToNearest(20,64);
+	}
+	Floor_LowerToNearest(14,64);
+}
+script 29 (void)
+{ //BARON DEATH SSG AND RED SKULL
+	if(ThingCount(T_NONE,29)==0) {
+		Floor_MoveToValue(17,16,-8,0);
+	}
+}
+
+script 3061 (void)
+{ //BLUE KEY ARCHVILE DEATH REVEALS COMPUTERS
+	if(ThingCount(T_NONE,62)==0) {
+		ChangeFloor(15, "COMPSPAN");
+		ChangeFloor(61, "COMPSPAN");
+		Floor_MoveToValue(61,16,168,0);
+		Floor_MoveToValue(30,16,184,0);
+		Floor_MoveToValue(15,16,56,0);
+	}
+}
+
+script 31 (void)
+{ // ALL LOST SOULS DEAD. REVEAL PAIN ELEMENTAL
+	if(ThingCount(T_NONE,311)==0) {
+		Floor_LowerToNearest(31,64);
+	}
+}
+
+script 34 (void)
+{ // BFG SECRET
+	Ceiling_MoveToValue(34,16,144,0);
+	Floor_MoveToValue(34,16,56,0);
+}
+
+script 35 (void)
+{ //ARACHNOTRON DEATH LOWER YELLOW SKULL
+	if(ThingCount(T_NONE,36)==0) {
+		Floor_MoveToValue(35,96,104,0);
+	}
+}
+
+script 38 (void)
+{ // PAIN ELEMENTAL CRUSHER
+	if(ThingCount(T_NONE,311)!=0) {
+		Ceiling_CrushAndRaise(38, 64, 3000, 0);
+		Delay(35 * 1);
+		Log(s:"You hear an oddly satisfying crunch...");
+		Delay(35 * 15);
+		Ceiling_CrushStop(38);
+		Ceiling_MoveToValue(38,16,192,0);
+	}else{
+		Ceiling_CrushAndRaise(38, 64, 3000, 0);
+		Delay(35 * 1);
+		Log(s:"This could've been useful...");
+		Delay(35 * 15);
+		Ceiling_CrushStop(38);
+		Ceiling_MoveToValue(38,16,192,0);
+	}
+}
+
+script 3763 (void) // Crossing Lines reveals cyberdemon
+{ // BLUE KEY ARACHNOTRON REVEAL
+	Floor_MoveToValue(37,128,56,0);
+	Ceiling_MoveToValue(63,128,184, 0);
+}
+
+script 4265 (void)
+{ // DUST 1 TELEPORTER REVEAL
+	Ceiling_MoveToValue(42,16,232,0);
+	Ceiling_MoveToValue(65,16,224,0);
+}
+
+script 5166 (void)
+{ // FINAL TELEPORTER REVEAL
+	Ceiling_MoveToValue(51,16,120,0);
+	Ceiling_MoveToValue(66,16,112,0);
+}
+
+script 46 (void)
+{ // TELEPORT TO DUST 1
+	Teleport(0,46);
+	SetMusic("D_IN_CIT");
+}
+
+int presscount = 0;
+int countto3 = 0;
+script 48 (void)
+{ // ENDGAME PRELUDE
+	if (presscount == 0) {
+		PrintBold(s:"DEMONIC OUTBREAK CONTAINED");
+		Delay(35 * 3);
+		for (countto3 = 0; countto3 < 3; countto3++)
+		{
+			PrintBold(s:"CASUALTIES:\n.");
+			Delay(5);
+			PrintBold(s:"CASUALTIES:\n..");
+			Delay(5);
+			PrintBold(s:"CASUALTIES:\n...");
+			Delay(5);
+			PrintBold(s:"CASUALTIES:\n....");
+			//Log(i:countto3);
+		}
+		Delay(5);
+		PrintBold(s:"CASUALTIES:\nCURRENTLY INCALCULABLE");
+		Delay(35 * 3);
+		Log(s:"DEMONIC PRESENCE STILL DETECTED");
+		PrintBold(s:"WARNING");
+		Delay(35 * 3);
+		Log(s:"ARMORY ACCESS GRANTED");
+		Floor_MoveToValue(48,16,0,0);
+		PrintBold(s:"NEW OBJECTIVE:\nNEUTRALIZE CYBERDEMON");
+		Ceiling_MoveToValue(55,16, 80, 0);
+		Delay(35 * 1);
+		Log(s:"GET PSYCHED!");
+		Delay(35 * 30);
+		Ceiling_MoveToValue(55,16, 0, 0);
+		presscount = presscount + 1;
+	}
+	else
+	{ //IF CASUALTY REPORT PLAYED JUST OPEN DOOR
+		Ceiling_MoveToValue(55,16, 80, 0);
+		Delay(35 * 3);
+		Ceiling_MoveToValue(55,16, 0, 0);
+	}
+}
+
+int reveal = 0;
+script 431 (void)
+{ // CYBERDEMON REVEAL
+	if(ThingCount(T_NONE,64)==0 && ThingCount(T_NONE,6999)==1) {
+		Floor_MoveToValue(43,128,64,0);
+		Ceiling_MoveToValue(43,128, 256, 0);
+		ChangeFloor(59, "CRATOP1");
+		ChangeCeiling(43, "F_SKY1");
+		Floor_MoveToValue(59,128,128,0);
+		if(reveal==0){
+			PrintBold(s:"DEFEAT THE CYBERDEMON");
+		}
+	}
+	reveal++;
+}
+
+script 699 (void)
+{ // CYBERDEMON DEFEAT
+	if(ThingCount(T_NONE,6999)==0) {
+		SetMusic("D_READ_M");
+		PrintBold(s:"DEMONIC PRESENCE ELIMINATED");
+		Delay(35 * 2);
+		PrintBold(s:"LOCKDOWN LIFTED");
+		ChangeFloor(59, "RROCK04");
+		Floor_MoveToValue(59,128,64,0);
+		Ceiling_MoveToValue(43,128, 256, 0);
+		//ChangeCeiling(43, "F_SKY1");
+		Floor_MoveToValue(44,16,64,0);
+		Floor_MoveToValue(45,16,88,0);
+	}
+}

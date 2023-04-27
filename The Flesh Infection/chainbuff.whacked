@@ -1,0 +1,71 @@
+{
+    "engine": "tables_doom19u",
+    "iwad": "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\wads\\DOOM2.WAD",
+    "pwads": [],
+    "windows": {
+        "things": {
+            "x": 0,
+            "y": 0,
+            "width": 1186,
+            "height": 650,
+            "visible": 0
+        },
+        "states": {
+            "x": 32,
+            "y": 32,
+            "width": 1024,
+            "height": 732,
+            "visible": 0
+        },
+        "active": "sounds",
+        "sounds": {
+            "x": 64,
+            "y": 64,
+            "width": 430,
+            "height": 480,
+            "visible": 0
+        },
+        "strings": {
+            "x": 96,
+            "y": 96,
+            "width": 640,
+            "height": 480,
+            "visible": 0
+        },
+        "weapons": {
+            "x": 128,
+            "y": 128,
+            "width": 560,
+            "height": 580,
+            "visible": 0
+        },
+        "ammo": {
+            "x": 160,
+            "y": 160,
+            "width": 520,
+            "height": 250,
+            "visible": 0
+        },
+        "cheats": {
+            "x": 0,
+            "y": 0,
+            "width": 340,
+            "height": 401,
+            "visible": 0
+        },
+        "misc": {
+            "x": 32,
+            "y": 32,
+            "width": 420,
+            "height": 450,
+            "visible": 0
+        },
+        "par": {
+            "x": 64,
+            "y": 64,
+            "width": 400,
+            "height": 380,
+            "visible": 0
+        }
+    }
+}

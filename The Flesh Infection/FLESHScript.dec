@@ -1,0 +1,36 @@
+#include "zcommon.acs"
+
+script 1 (void)
+{   //Teleporter Secret
+    Floor_MoveToValue(8,32,-8,0);
+    Floor_MoveToValue(9,32,-16,0);
+}
+int spawnercount = 0;
+int spawnersecret = 0;
+script 2 (void)
+{	//Spawn Armor/SSG Secret
+    spawnercount++;
+    spawnersecret++;
+    if (spawnercount == 1 && spawnersecret == 1)
+    {
+        SpawnSpot("RocketLauncher",10);
+	    SpawnSpot("TeleportFog", 15);
+    };
+    if (spawnercount == 2 && spawnersecret == 2)
+    {
+        SpawnSpot("GreenArmor",10);
+        SpawnSpot("TeleportFog", 15);
+        Floor_MoveToValue(5,32,0,0);
+    };
+    if (spawnercount >= 2 && spawnersecret >= 2)
+    {
+		Log(s:"No more goodies...");
+    };
+}
+script 3 (void)
+{   //Archvile Spawn Blue Key Room
+	SpawnSpot("Archvile", 15, 1045, 180);
+	SpawnSpot("TeleportFog", 15);
+    Floor_MoveToValue(14,32,-16,0);
+    Door_Open(16,16);
+}

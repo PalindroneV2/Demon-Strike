@@ -1,0 +1,43 @@
+Patch File for DeHackEd v3.0
+# Created with WhackEd4 1.2.4 BETA
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 21
+Patch format = 6
+
+
+Thing 34 (Rocket in flight)
+Missile damage = 50
+
+Thing 36 (BFG projectile)
+Missile damage = 250
+
+Frame 14
+Duration = 3
+
+Frame 15
+Duration = 3
+
+Frame 16
+Duration = 3
+
+Frame 17
+Duration = 3
+
+Frame 52
+Duration = 3
+
+Frame 53
+Duration = 3
+
+Frame 55
+Duration = 3
+
+Weapon 3 (Minigun)
+
+Cheat 0
+Chainsaw = idgroovy
+No Clipping 1 = noclip
+
+Text 21 18
+You got the chaingun!You got a minigun!

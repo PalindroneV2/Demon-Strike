@@ -42,9 +42,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -215.158f;
-		viewpositiony = 302.1419f;
-		viewscale = 5.1602f;
+		viewpositionx = -582.9249f;
+		viewpositiony = -203.9661f;
+		viewscale = 0.1703736f;
 		
 		reloadresourceprecommand
 		{
