@@ -1,0 +1,4 @@
+open normal sprite on Paint NET
+CTRL+SHIFT+U = Hue/Saturation Adjustments
+Hue: -60
+Saturation: 60
