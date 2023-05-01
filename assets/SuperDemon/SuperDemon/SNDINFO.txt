@@ -1,0 +1,3 @@
+superdemon/death		DSSUPDTH
+superdemon/snarl		DSSUPSNA
+superdemon/crash		DSSUPLND

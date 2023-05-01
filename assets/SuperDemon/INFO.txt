@@ -1,0 +1,7 @@
+Name: Super Demon
+Difficulty: Hard
+Connection: None
+Summon: SuperDemon
+Melee: No
+Distance: Projectile
+Type: Demon

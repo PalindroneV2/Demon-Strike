@@ -1,0 +1,32 @@
+map MAP01 "Infected Flesh"
+{
+	next = "MAP02"
+	secretnext = "MAP31"
+	titlepatch = "T_MAP01"
+    sky1 = "RSKY3"
+	cluster = 1
+	par = 300
+	music = "D_MESSAG"
+	Author = "Palindrone"
+}
+
+map MAP31 "Jamais Vu"
+{
+	next = "MAP16"
+	secretnext = "MAP32"
+	titlepatch = "T_MAP31"
+    sky1 = "RSKY1"
+	cluster = 1
+	par = 300
+	music = "D_EVIL"
+	Author = "Palindrone"
+}
+
+DoomEdNums
+{
+11500=MP40
+11501=EnemyDog
+11502=PlasmaSS
+11503=NaziGuard
+11504=Harbinger
+}
