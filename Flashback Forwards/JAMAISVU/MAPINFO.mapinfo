@@ -1,27 +1,7 @@
-map MAP01 "Infected Flesh"
-{
-	next = "MAP02"
-	secretnext = "MAP31"
-	titlepatch = "T_MAP01"
-    sky1 = "RSKY3"
-	cluster = 1
-	par = 300
-	music = "D_MESSAG"
-	Author = "Palindrone"
+include mapinfo/flshfwd.mapinfo
+GameInfo {
+	PlayerClasses = "DoomPlayerNew"
 }
-
-map MAP31 "Jamais Vu"
-{
-	next = "MAP16"
-	secretnext = "MAP32"
-	titlepatch = "T_MAP31"
-    sky1 = "RSKY1"
-	cluster = 1
-	par = 300
-	music = "D_EVIL"
-	Author = "Palindrone"
-}
-
 DoomEdNums
 {
 11500=MP40
@@ -29,4 +9,15 @@ DoomEdNums
 11502=PlasmaSS
 11503=NaziGuard
 11504=Harbinger
+11600=W3DPotTree
+11601=W3DPotPlant
+11602=W3DPotAlone
+11603=W3DWoodBarrel
+11604=W3DArmorDeco
+11605=W3DNaziFlag
+11606=W3DHangingSkelton
+11607=W3DCage
+11608=W3DCage2
+11609=W3DSkeletonFloor
+11610=W3DBonePile
 }

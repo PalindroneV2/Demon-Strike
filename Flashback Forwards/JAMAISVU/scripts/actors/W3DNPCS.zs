@@ -5,7 +5,10 @@ class EnemyDog : MBFHelperDog
 		Health 40;
 		Tag "Nazi Hound";
 		Species "Nazi";
+		Obituary "You were mauled to death by a Nazi Hound";
+		-DOHARMSPECIES
 		+DONTHARMSPECIES
+		+NOINFIGHTSPECIES
 	}
 }
 class NaziGuard : WolfensteinSS
@@ -30,6 +33,7 @@ class NaziGuard : WolfensteinSS
 		Species "Nazi";
 		-DOHARMSPECIES
 		+DONTHARMSPECIES
+		+NOINFIGHTSPECIES
 	}
 	States
 	{
@@ -70,7 +74,7 @@ class WaffenSS : WolfensteinSS replaces WolfensteinSS
 		Radius 20;
 		Height 56;
 		Speed 8;
-		PainChance 170;
+		PainChance 150;
 		Monster;
 		+FLOORCLIP
 		SeeSound "wolfss/sight";
@@ -84,6 +88,7 @@ class WaffenSS : WolfensteinSS replaces WolfensteinSS
 		Species "Nazi";
 		-DOHARMSPECIES
 		+DONTHARMSPECIES
+		+NOINFIGHTSPECIES
 	}
 	States
 	{
@@ -128,8 +133,8 @@ class PlasmaSS : WolfensteinSS
 {
 	Default
 	{
-	   Health 100;
-		PainChance 75;
+	   Health 75;
+		PainChance 125;
 		SeeSound "wolfss/sight";
 		PainSound "wolfss/pain";
 		DeathSound "wolfss/death";
@@ -141,6 +146,7 @@ class PlasmaSS : WolfensteinSS
 		Species "Nazi";
 		-DOHARMSPECIES
 		+DONTHARMSPECIES
+		+NOINFIGHTSPECIES
 	}
 	States
 	{
@@ -152,8 +158,8 @@ class PlasmaSS : WolfensteinSS
 			Loop;
 		Missile:
 			SSPL E 5 A_FaceTarget;
-			SSPL G 3 BRIGHT A_PlasmaSSAttack;
-			SSPL F 3 BRIGHT;
+			SSPL G 4 BRIGHT A_PlasmaSSAttack;
+			SSPL F 4 BRIGHT;
 			SSPL F 5 A_CPosRefire;
 			Goto Missile+1;
 		Pain:

@@ -5,7 +5,7 @@ class MP40 : DoomWeapon
 		Weapon.SelectionOrder 700;
 		Weapon.SlotNumber 4;
 		Weapon.AmmoUse 1;
-		Weapon.AmmoGive 8;
+		Weapon.AmmoGive 20;
 		Weapon.AmmoType "Clip";
 		Inventory.PickupMessage "You got the MP40!";
 		attacksound "MP40/Fire";
@@ -41,18 +41,19 @@ class MP40 : DoomWeapon
 		Stop;
 	}
 }
-class Handgun : DoomWeapon replaces Pistol
+class Handgun : Pistol replaces Pistol
 {
-	Default
+ 	Default
 	{
 		Weapon.SelectionOrder 1900;
+		Weapon.SlotNumber 2;
 		Weapon.AmmoUse 1;
-		Weapon.AmmoGive 10;
+		Weapon.AmmoGive 20;
 		Weapon.AmmoType "Clip";
-		Obituary "%k somehow killed %o with a pistol.";
-		+WEAPON.WIMPY_WEAPON;
-		Inventory.Pickupmessage "You picked up a pistol.";
-		Tag "Pistol";
+		Obituary "%k somehow killed %o with a Handgun.";
+		-WEAPON.WIMPY_WEAPON;
+		Inventory.PickupMessage "You picked up a Handgun.";
+		Tag "Handgun";
 	}
 	States
 	{
@@ -66,15 +67,15 @@ class Handgun : DoomWeapon replaces Pistol
 		PISG A 1 A_Raise;
 		Loop;
 	Fire:
-		PISG A 4;
-		PISG B 2 A_FirePistol;
-		PISG C 2;
-		PISG B 2 A_ReFire;
+		PISG A 3;
+		PISG B 3 A_FirePistol;
+		PISG C 3;
+		PISG B 3 A_ReFire;
 		Goto Ready;
 	Flash:
-		PISF A 2 Bright A_Light1;
+		PISF A 3 Bright A_Light1;
 		Goto LightDone;
-		PISF A 2 Bright A_Light1;
+		PISF A 3 Bright A_Light1;
 		Goto LightDone;
  	Spawn:
 		PIST A -1;
