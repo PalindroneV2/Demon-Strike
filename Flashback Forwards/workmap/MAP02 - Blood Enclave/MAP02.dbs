@@ -1,0 +1,132 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomUDMF.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP02
+	{
+		
+		plugins
+		{
+			
+			threedfloormode
+			{
+				
+				controlsectorarea
+				{
+					usecustomtagrange = true;
+					firsttag = 3000;
+					lasttag = 4000;
+					outerleft = -32769;
+					outerright = -26112;
+					outertop = -24448;
+					outerbottom = -32768;
+				}
+			}
+		}
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 1;
+				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\wads\\mywads\\Demon-Strike\\Flashback Forwards\\MyPK3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		defaultfloortexture = "MFLR8_2";
+		defaultceiltexture = "F_SKY1";
+		defaulttoptexture = "SP_HOT1";
+		defaultwalltexture = "SP_HOT1";
+		defaultbottomtexture = "SP_HOT1";
+		custombrightness = 196;
+		customfloorheight = 0;
+		customceilheight = 128;
+		overridefloortexture = false;
+		overrideceiltexture = false;
+		overridetoptexture = false;
+		overridemiddletexture = false;
+		overridebottomtexture = false;
+		overridefloorheight = false;
+		overrideceilheight = false;
+		overridebrightness = false;
+		uselongtexturenames = false;
+		viewpositionx = 56.02695f;
+		viewpositiony = 76.54279f;
+		viewscale = 2.470636f;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		grid
+		{
+			background = "";
+			backsource = 0;
+			backoffsetx = 0;
+			backoffsety = 0;
+			backscalex = 100;
+			backscaley = 100;
+			gridsize = 8;
+			gridrotate = 0;
+			gridoriginx = 0;
+			gridoriginy = 0;
+		}
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		selectiongroups
+		{
+			
+			2
+			{
+				linedefs = "1366 1367 1368 1369 1370 1371 1372 1373 1374 1375 1376 1377 1378 1379 1380 1381 1382 1383 1384 1385 1386 1387 1388 1389 1390 1391 1392 1393 1394 1395 1396 1397 1398 1399 1400 1401 1402 1403 1404 1405 1406 1407 1408 1409 1410 1411 1412 1413 1414 1415 1416 1417 1418 1419 1420 1421 1422 1423 1424 1425 1426 1427 1428 1429 1449 1450 1451 1452 1453 1454 1455 1456 1457 1458 1459 1460 1461 1462 1463 1464 1465 1466 1467 1468 1469 1470 1475 1476 1477 1478 1479 1480 1481 1482 1483 1484 1485 1497 1498 1499 1500 1501";
+				sectors = "118 123 128 130 132";
+			}
+			
+			3
+			{
+				linedefs = "1369 1370 1371 1372 1373 1374 1406 1407 1408 1409 1410 1411 1412 1413 1414 1453 1457 1458 1497 1498 1499 1500 1501";
+				sectors = "123";
+			}
+		}
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				user_managed_3d_floor = 3;
+			}
+		}
+	}
+}
