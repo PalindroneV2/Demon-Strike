@@ -15,7 +15,7 @@ map MAP02 "Volcanic Fortress"
 	next = "MAP03"
 	secretnext = "MAP31"
 	titlepatch = "T_MAP02"
-    sky1 = "RSKY2"
+    sky1 = "RSKY3"
 	cluster = 1
 	par = 300
 	music = "D_WATCH"

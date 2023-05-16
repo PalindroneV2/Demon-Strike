@@ -3,6 +3,12 @@ texture W3DBJPC1
 	pic W3DBJPC2 tics 15
 	pic W3DBJPC3 tics 15
 
+texture N_LFALL1
+pic 1 tics 8
+pic 2 tics 8
+pic 3 tics 8
+pic 4 tics 8
+
 cameratexture W3DCAMTX	256 256 fit 64 64
 
 switch doom 2 W3DSWT02 on pic W3DSWT01 tics 0
