@@ -4,6 +4,13 @@ GameInfo {
 }
 DoomEdNums
 {
+11400=GreenArmorSmall
+11401=BlueArmorSmall
+11402=RedArmor
+11403=RedArmorSmall
+11404=EnchantedArmor
+11405=HalfHeal
+11406=FullHeal
 11500=MP40
 11501=EnemyDog
 11502=PlasmaSS

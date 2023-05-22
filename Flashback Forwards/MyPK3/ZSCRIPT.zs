@@ -4,6 +4,7 @@ version "4.8.2"
 #include "scripts/actors/W3DDECO.zs"
 #include "scripts/actors/Harbinger.zs"
 #include "scripts/actors/Weapons.zs"
+#include "scripts/actors/HealthArmor.zs"
 
 class DoomPlayerNew : DoomPlayer replaces DoomPlayer
 {

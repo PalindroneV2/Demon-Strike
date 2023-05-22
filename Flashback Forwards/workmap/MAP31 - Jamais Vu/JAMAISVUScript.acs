@@ -1,0 +1,117 @@
+#include "zcommon.acs"
+
+script 1 ENTER
+{ //Kill first SS soldier
+		ClearInventory();
+		GiveInventory("Fist", 1);
+		Thing_Damage(2,50);
+		Thing_ChangeTID(0,1000);
+		Thing_Hate(1400,1500,3);
+		Thing_Hate(1500,1400,3);
+}
+
+script 2 (void)
+{ //LOWER LIFT
+	Ceiling_MoveToValue(7,32,0);
+	Floor_MoveToValue(7,32,-64);
+}
+script 3 (void)
+{ // RAISE LIFT
+	Ceiling_MoveToValue(7,32,160);
+	Floor_MoveToValue(7,32,96);
+}
+script 4 (void)
+{ //BJ message
+	SetLineTexture(8, SIDE_FRONT, TEXTURE_MIDDLE,"W3DBJPC1");
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"Hey you!");
+	Delay(105);
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"You're really doing a number on that castle...");
+	Delay(70);
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"You don't look like someone from the OSS...");
+	Delay(70);
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"But as long as you keep on killing nazis it's fine by me!");
+	Delay(105);
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"Give em hell!");
+	Delay(105);
+	SetLineTexture(8, SIDE_FRONT, TEXTURE_MIDDLE,"W3DCOM01");
+}
+script 5 (void)
+{ // Reveal computers
+	Ceiling_MoveToValue(9,16,-104);
+	Floor_MoveToValue(9,16,-232);
+}
+script 6 (void)
+{ // Find a way to kill the demons
+	SetLineTexture(11, SIDE_FRONT, TEXTURE_BOTTOM,"W3DBJPC1");
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"These damn nazis are medling with forces they don't understand.");
+	Delay(105);
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"Find a way to kill all of those monsters.");
+	Delay(105);
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"Their eggheads should have some contingency plan somewhere...");
+	Delay(105);
+	SetLineTexture(11, SIDE_FRONT, TEXTURE_BOTTOM,"W3DCOM01");
+}
+int monsterrelease=0;
+script 7 (void)
+{ // RELEASE ALL MONSTERS
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"Pandemonium! You released the monsters!");
+	Ceiling_RaisebyValue(2,32,64);
+	Floor_LowerByValue(2,32,64);
+	Ceiling_RaisebyValue(8,32,192);
+	Delay(70);
+	Door_Open(19,16);
+	monsterrelease++;
+}
+script 8 OPEN
+{ //Camera thing
+	SetCameraToTexture(16,"W3DCAMTX",90);
+	Delay(105);
+	SetCameraToTexture(17,"W3DCAMTX",90);
+}
+script 9 (void)
+{ //Clear massacre room
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"Cleansing demonic presence.");
+	Thing_Damage(1500,5000);
+	Door_Open(15,16);
+}
+script 10 (void)
+{//Teleport Cyberdemon
+	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+	Log(s:"Purging demon test subject chambers.");
+	TeleportOther(23,21,1);
+	Thing_Damage(10,5000);
+}
+script 11 (void)
+{ // BJ message
+	if(monsterrelease == 0)
+	{
+		SetLineTexture(24, SIDE_FRONT, TEXTURE_BOTTOM,"W3DBJPC1");
+		PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+		Log(s:"This must be their control station for the containment cells.");
+		Delay(105);
+		PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+		Log(s:"Give the bastards a surprise and wipe them out.");
+		Delay(105);
+		SetLineTexture(24, SIDE_FRONT, TEXTURE_BOTTOM,"W3DCOM01");
+	}else{
+		SetLineTexture(24, SIDE_FRONT, TEXTURE_BOTTOM,"W3DBJPC1");
+		PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+		Log(s:"Used their own monsters against them?");
+		Delay(105);
+		PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
+		Log(s:"Crafty...");
+		Delay(105);
+		SetLineTexture(24, SIDE_FRONT, TEXTURE_BOTTOM,"W3DCOM01");
+	}
+
+}
