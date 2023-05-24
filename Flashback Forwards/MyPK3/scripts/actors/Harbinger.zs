@@ -3,6 +3,7 @@ class Harbinger : CyberDemon
 	Default
 	{
 		Tag "Harbinger of Doom";
+       //$Category Monsters
 		Obituary "%o was crushed by the Harbinger of Doom.";
 		Health 3500;
 		Radius 40;

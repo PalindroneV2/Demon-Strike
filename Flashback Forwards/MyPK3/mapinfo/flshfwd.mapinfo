@@ -4,7 +4,7 @@ map MAP01 "Infected Flesh"
 	secretnext = "MAP31"
 	titlepatch = "T_MAP01"
     sky1 = "RSKY3"
-	cluster = 1
+	cluster = 21
 	par = 300
 	music = "D_MESSAG"
 	Author = "Palindrone"
@@ -16,13 +16,13 @@ map MAP02 "Volcanic Fortress"
 	secretnext = "MAP31"
 	titlepatch = "T_MAP02"
     sky1 = "RSKY3"
-	cluster = 1
+	cluster = 21
 	par = 300
 	music = "D_WATCH"
 	Author = "Palindrone"
 }
 
-cluster 1
+cluster 21
 {
 	flat =	W3DBLBR3
 	music = D_READ_M
@@ -39,11 +39,11 @@ map MAP31 "Jamais Vu"
 {
 	ResetHealth
 	ResetInventory
-	next = "MAP16"
+	next = "MAP32"
 	secretnext = "MAP32"
 	titlepatch = "T_MAP31"
     sky1 = "RSKY1"
-	cluster = 2
+	cluster = 22
 	par = 300
 	music = "D_EVIL"
 	Author = "Palindrone"

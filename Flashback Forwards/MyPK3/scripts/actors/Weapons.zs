@@ -3,6 +3,7 @@ class MP40 : DoomWeapon
 	Default
 	{
 		Weapon.SelectionOrder 700;
+       //$Category Weapons
 		Weapon.SlotNumber 4;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 20;

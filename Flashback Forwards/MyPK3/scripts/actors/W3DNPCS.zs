@@ -4,6 +4,7 @@ class EnemyDog : MBFHelperDog
 	{
 		Health 40;
 		Tag "Nazi Hound";
+       //$Category Monsters
 		Species "Nazi";
 		Obituary "You were mauled to death by a Nazi Hound";
 		+DONTHARMSPECIES
@@ -28,6 +29,7 @@ class NaziGuard : WolfensteinSS
 		AttackSound "wolfss/attack";
 		Obituary "You were killed by a Nazi Guard.";
 		Tag "Nazi Guard";
+       //$Category Monsters
 		Dropitem "Clip";
 		Species "Nazi";
 		+DONTHARMSPECIES
@@ -82,6 +84,7 @@ class WaffenSS : WolfensteinSS replaces WolfensteinSS
 		AttackSound "MP40/Fire";
 		Obituary "You were riddled by holes by a Waffen SS.";
 		Tag "Waffen SS";
+       //$Category Monsters
 		Dropitem "MP40";
 		Species "Nazi";
 		+DONTHARMSPECIES
@@ -139,6 +142,7 @@ class PlasmaSS : WolfensteinSS
 		AttackSound "baby/attack";
 		Obituary "You were melted by a Plasmawaffen SS.";
 		Tag "Plasmawaffen SS";
+       //$Category Monsters
 		Dropitem "PlasmaRifle";
 		Species "Nazi";
 		+DONTHARMSPECIES

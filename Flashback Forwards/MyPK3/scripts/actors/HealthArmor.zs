@@ -1,9 +1,8 @@
-class GreenArmor35 : GreenArmor
+class GreenArmor35 : GreenArmor replaces GreenArmor
 {
     Default
     {
 		Tag "Security Armor";
-        //$Category "Health and Armor";
         Inventory.PickupMessage "Picked up the Security Armor" ;
         Armor.SavePercent 35;
     }
@@ -14,7 +13,7 @@ class BlueArmor50 : BlueArmor
     Default
     {
 		Tag "Combat Armor";
-        //$Category "Health and Armor";
+       //$Category Health and Armor
         Inventory.PickupMessage "Picked up the Combat Armor" ;
     }
 }
@@ -24,7 +23,7 @@ class GreenArmorSmall : BasicArmorPickup
     Default
     {
 		Tag "Light Security Armor";
-        //$Category "Health and Armor";
+       //$Category Health and Armor
         Radius 20;
         Height 16;
         Inventory.PickupMessage "Picked up the Light Security Armor" ;
@@ -46,7 +45,7 @@ class BlueArmorSmall : BasicArmorPickup
     Default
     {
 		Tag "Light Combat Armor";
-        //$Category "Health and Armor";
+       //$Category Health and Armor
         Radius 20;
         Height 16;
         Inventory.PickupMessage "Picked up the Light Combat Armor" ;
@@ -68,7 +67,7 @@ class RedArmor : BasicArmorPickup
     Default
     {
 		Tag "Advanced Armor";
-        //$Category "Health and Armor";
+        //$Category Health and Armor
         Radius 20;
         Height 16;
         Inventory.PickupMessage "Picked up the Advanced Armor" ;
@@ -90,7 +89,7 @@ class RedArmorSmall : BasicArmorPickup
     Default
     {
 		Tag "Light Advanced Armor";
-        //$Category "Health and Armor";
+        //$Category Health and Armor
         Radius 20;
         Height 16;
         Inventory.PickupMessage "Picked up the Light Advanced Armor" ;
@@ -112,7 +111,7 @@ class EnchantedArmor : BasicArmorPickup
     Default
     {
 		Tag "Enchanted Armor";
-        //$Category "Health and Armor";
+       //$Category Health and Armor
         Radius 20;
         Height 16;
         Inventory.PickupMessage "Behold! You picked up the Encahnted Armor!" ;
@@ -134,7 +133,7 @@ class  HalfHeal : Health
     Default
     {
 		Tag "Surgery Kit";
-        //$Category "Health and Armor";
+       //$Category Health and Armor
         Inventory.Amount 50;
         Inventory.PickupMessage "Picked up a Surgery Kit.";
         Health.LowMessage 25, "Picked up an Surgery Kit that you REALLY need!";
@@ -152,7 +151,7 @@ class  FullHeal : Health
     Default
     {
 		Tag "Full Recovery Kit";
-        //$Category "Health and Armor";
+       //$Category Health and Armor
         Inventory.Amount 100;
         Inventory.PickupMessage "Picked up a Full Recovery Kit.";
         Health.LowMessage 25, "Picked up an Full Recovery Kit that you REALLY need!";
@@ -162,5 +161,42 @@ class  FullHeal : Health
         Spawn:
             FHEL A -1;
             Stop;
+    }
+}
+
+class  W3DFood : Health
+{
+    Default
+    {
+		Tag "Hot Meal";
+       //$Category Health and Armor
+        Inventory.Amount 10;
+        Inventory.PickupMessage "You ate a Hot Meal.";
+        Health.LowMessage 25, "You ate some nutritious food that will keep you alive!";
+    }
+    States
+    {
+        Spawn:
+            W3FD A -1;
+            Stop;
+    }
+}
+
+class W3DDogFood: Health
+{
+    Default
+    {
+        Tag "Dog Food";
+        //$Category Health and Armor
+        +COUNTITEM;
+        Inventory.Amount 5;
+        Inventory.MaxAmount 200;
+        Inventory.PickupMessage "Ate some dog food." ;
+    }
+    States
+    {
+        Spawn:
+            W3DF A -11;
+            Loop;
     }
 }
