@@ -1,0 +1,97 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomUDMF.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MMAP02
+	{
+		viewpositionx = -2126.741f;
+		
+		grid
+		{
+			backsource = 0;
+			backscaley = 100;
+			backscalex = 100;
+			gridsize = 32;
+			gridoriginx = 0;
+			background = "";
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridoriginy = 0;
+			backoffsety = 0;
+		}
+		overridebottomtexture = false;
+		overridemiddletexture = false;
+		customfloorheight = 0;
+		
+		testprecommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		overridebrightness = false;
+		
+		testpostcommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		defaultfloortexture = "MFLR8_2";
+		defaultbottomtexture = "TANROCK4";
+		defaulttoptexture = "TANROCK4";
+		defaultwalltexture = "TANROCK4";
+		viewpositiony = 1523.082f;
+		overrideceilheight = false;
+		viewscale = 3.779513f;
+		
+		reloadresourcepostcommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		
+		reloadresourceprecommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		custombrightness = 196;
+		uselongtexturenames = false;
+		overridefloorheight = false;
+		defaultceiltexture = "F_SKY1";
+		overridefloortexture = false;
+		overrideceiltexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		customceilheight = 128;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 1;
+				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\wads\\mywads\\Demon-Strike\\Flashback Forwards\\MyPK3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		overridetoptexture = false;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				user_managed_3d_floor = 3;
+			}
+		}
+	}
+}

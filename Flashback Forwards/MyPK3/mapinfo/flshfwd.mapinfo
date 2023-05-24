@@ -1,41 +1,74 @@
-map MAP01 "Infected Flesh"
+map HUBMAP "Startan Base"
 {
-	next = "MAP02"
-	secretnext = "MAP31"
+	/* next="MMAP01" */
+	secretnext="MAP29"
+	titlepatch = "THUBMAP"
+	sky1="RSKY1"
+	cluster = 21
+	par = 6000
+	music = "D_RUNNIN"
+	Author = "Palindrone"
+	levelnum = 100
+	ResetInventory
+	ResetItems
+	NoIntermission
+}
+
+map MMAP01 "Infected Flesh"
+{
+	/* next = "MMAP02" */
+	secretnext = "MMAP31"
 	titlepatch = "T_MAP01"
     sky1 = "RSKY3"
 	cluster = 21
 	par = 300
 	music = "D_MESSAG"
 	Author = "Palindrone"
+	levelnum = 101
+	ResetInventory
+	ResetItems
 }
 
-map MAP02 "Volcanic Fortress"
+map MMAP02 "Volcanic Fortress"
 {
-	next = "MAP03"
-	secretnext = "MAP31"
+	/* next = "MAP03" */
+	secretnext = "MMAP31"
 	titlepatch = "T_MAP02"
     sky1 = "RSKY3"
 	cluster = 21
 	par = 300
 	music = "D_WATCH"
 	Author = "Palindrone"
+	levelnum = 102
+	ResetInventory
+	ResetItems
 }
 
 cluster 21
 {
-	flat =	W3DBLBR3
+}
+
+cluster 22
+{
+	flat = W3DBLBR3
 	music = D_READ_M
- 	exittext = 
+	entertext =
  	"The darkness fades and your senses",
 	"come back with a sharp pain on your head.",
 	"You look around and only see the blue stone",
 	"bricks of a tiny prison cell.",
 	"Your weapons and ammo are gone but not",
 	"your determination to end this nightmare..."
+	entertext =
+ 	"You are in luck, another tear in",
+	"space time allows you to finally return to",
+	"your time. You hope that whatever you",
+	"did helping out the Allies with their little",
+	"demon problem didn't do much harm to the",
+	"timeline..."
 }
 
-map MAP31 "Jamais Vu"
+map MMAP31 "Jamais Vu"
 {
 	ResetHealth
 	ResetInventory
@@ -47,4 +80,5 @@ map MAP31 "Jamais Vu"
 	par = 300
 	music = "D_EVIL"
 	Author = "Palindrone"
+	levelnum = 131
 }

@@ -1,4 +1,12 @@
 include mapinfo/flshfwd.mapinfo
+
+clearepisodes
+
+Episode HUBMAP
+{
+	Name = "Startan Base"
+}
+
 GameInfo {
 	PlayerClasses = "DoomPlayerNew"
 }

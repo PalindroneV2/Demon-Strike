@@ -5,16 +5,16 @@ strictpatches = 0;
 maps
 {
 	
-	MAP31
+	MMAP01
 	{
-		viewpositionx = 945.7779f;
+		viewpositionx = -1273.883f;
 		
 		grid
 		{
 			backsource = 0;
 			backscaley = 100;
 			backscalex = 100;
-			gridsize = 8;
+			gridsize = 32;
 			gridoriginx = 0;
 			background = "";
 			backoffsetx = 0;
@@ -24,7 +24,6 @@ maps
 		}
 		overridebottomtexture = false;
 		overridemiddletexture = false;
-		customfloorheight = 0;
 		
 		testprecommand
 		{
@@ -40,13 +39,14 @@ maps
 			autocloseonsuccess = true;
 			stderriserror = true;
 		}
-		defaultfloortexture = "FLAT18";
-		defaultbottomtexture = "W3DBLU01";
-		defaulttoptexture = "W3DBLU01";
-		defaultwalltexture = "W3DBLU01";
-		viewpositiony = -720.6509f;
+		defaultfloortexture = "FLOOR0_5";
+		defaultbottomtexture = "STARTAN2";
+		defaulttoptexture = "STARTAN2";
+		defaultwalltexture = "STARTAN2";
+		viewpositiony = 2443.15f;
 		overrideceilheight = false;
-		viewscale = 0.1133239f;
+		defaultceiltexture = "CEIL5_1";
+		viewscale = 1.427512f;
 		
 		reloadresourcepostcommand
 		{
@@ -64,7 +64,15 @@ maps
 		custombrightness = 196;
 		uselongtexturenames = false;
 		overridefloorheight = false;
-		defaultceiltexture = "CEIL3_5";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				user_managed_3d_floor = 3;
+			}
+		}
 		overridefloortexture = false;
 		overrideceiltexture = false;
 		scriptcompiler = "zdoom_acs.cfg";
@@ -83,40 +91,7 @@ maps
 				requiredarchives = "";
 			}
 		}
+		customfloorheight = 0;
 		overridetoptexture = false;
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				user_managed_3d_floor = 3;
-			}
-		}
-		
-		scriptdocuments
-		{
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 3317;
-				firstvisibleline = 71;
-				activetab = true;
-			}
-		}
 	}
 }
