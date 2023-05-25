@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	HUBMAP
+	DENIED
 	{
 		
 		resources
@@ -13,19 +13,29 @@ maps
 			
 			resource0
 			{
-				type = 1;
-				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\wads\\mywads\\Demon-Strike\\Flashback Forwards\\MyPK3";
+				type = 0;
+				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\assets\\textura\\OTEX\\OTEX_1.1.WAD";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource1
+			{
+				type = 0;
+				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\assets\\textura\\32in24\\32in24-15_tex_v2.wad";
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "PTEXPTP1";
-		defaultceiltexture = "PTEXPTP1";
-		defaulttoptexture = "STARTAN2";
-		defaultwalltexture = "STARTAN2";
-		defaultbottomtexture = "STARTAN2";
+		defaultfloortexture = "ODMNDA04";
+		defaultceiltexture = "OBASEC00";
+		defaulttoptexture = "OCONCE58";
+		defaultwalltexture = "OCONCE58";
+		defaultbottomtexture = "OCONCE58";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -38,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -209.9098f;
-		viewpositiony = -49.31269f;
-		viewscale = 2.413402f;
+		viewpositionx = 169.5398f;
+		viewpositiony = -1326.054f;
+		viewscale = 5.302236f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -104,7 +114,6 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 13;
 				activetab = true;
 			}
 		}
