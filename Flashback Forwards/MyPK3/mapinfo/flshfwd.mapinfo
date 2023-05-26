@@ -59,13 +59,13 @@ cluster 22
 	"bricks of a tiny prison cell.",
 	"Your weapons and ammo are gone but not",
 	"your determination to end this nightmare..."
-	entertext =
+	/* exittext =
  	"You are in luck, another tear in",
 	"space time allows you to finally return to",
 	"your time. You hope that whatever you",
 	"did helping out the Allies with their little",
 	"demon problem didn't do much harm to the",
-	"timeline..."
+	"timeline..." */
 }
 
 map MMAP31 "Jamais Vu"
