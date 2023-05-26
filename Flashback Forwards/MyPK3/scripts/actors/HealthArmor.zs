@@ -3,7 +3,7 @@ class GreenArmor35 : GreenArmor replaces GreenArmor
     Default
     {
 		Tag "Security Armor";
-        Inventory.PickupMessage "Picked up the Security Armor" ;
+        Inventory.PickupMessage "Picked up the Security Armor. (75% DT)" ;
         Armor.SavePercent 35;
     }
 }
@@ -26,7 +26,7 @@ class GreenArmorSmall : BasicArmorPickup
        //$Category Health and Armor
         Radius 20;
         Height 16;
-        Inventory.PickupMessage "Picked up the Light Security Armor" ;
+        Inventory.PickupMessage "Picked up the Light Security Armor. (35% DT)" ;
         Inventory.Icon "ARM3A0";
         Armor.SavePercent 35;
         Armor.SaveAmount 50;
@@ -48,7 +48,7 @@ class BlueArmorSmall : BasicArmorPickup
        //$Category Health and Armor
         Radius 20;
         Height 16;
-        Inventory.PickupMessage "Picked up the Light Combat Armor" ;
+        Inventory.PickupMessage "Picked up the Light Combat Armor. (50% DT)" ;
         Inventory.Icon "ARM4A0";
         Armor.SavePercent 50;
         Armor.SaveAmount 50;
@@ -70,7 +70,7 @@ class RedArmor : BasicArmorPickup
         //$Category Health and Armor
         Radius 20;
         Height 16;
-        Inventory.PickupMessage "Picked up the Advanced Armor" ;
+        Inventory.PickupMessage "Picked up the Advanced Armor. (75% DT)" ;
         Inventory.Icon "ARM5A0";
         Armor.SavePercent 75;
         Armor.SaveAmount 200;
@@ -92,7 +92,7 @@ class RedArmorSmall : BasicArmorPickup
         //$Category Health and Armor
         Radius 20;
         Height 16;
-        Inventory.PickupMessage "Picked up the Light Advanced Armor" ;
+        Inventory.PickupMessage "Picked up the Light Advanced Armor.(75% DT)" ;
         Inventory.Icon "ARM6A0";
         Armor.SavePercent 75;
         Armor.SaveAmount 100;
@@ -114,7 +114,7 @@ class EnchantedArmor : BasicArmorPickup
        //$Category Health and Armor
         Radius 20;
         Height 16;
-        Inventory.PickupMessage "Behold! You picked up the Encahnted Armor!" ;
+        Inventory.PickupMessage "Behold! You picked up the Encahnted Armor! (100% DT)" ;
         Inventory.Icon "ARM7A0";
         Armor.SavePercent 100;
         Armor.SaveAmount 200;
@@ -135,8 +135,8 @@ class  HalfHeal : Health
 		Tag "Surgery Kit";
        //$Category Health and Armor
         Inventory.Amount 50;
-        Inventory.PickupMessage "Picked up a Surgery Kit.";
-        Health.LowMessage 25, "Picked up an Surgery Kit that you REALLY need!";
+        Inventory.PickupMessage "Picked up a Surgery Kit. (50% HP)";
+        Health.LowMessage 25, "Picked up an Surgery Kit that you REALLY need! (50% HP)";
     }
     States
     {
@@ -153,8 +153,8 @@ class  FullHeal : Health
 		Tag "Full Recovery Kit";
        //$Category Health and Armor
         Inventory.Amount 100;
-        Inventory.PickupMessage "Picked up a Full Recovery Kit.";
-        Health.LowMessage 25, "Picked up an Full Recovery Kit that you REALLY need!";
+        Inventory.PickupMessage "Picked up a Full Recovery Kit.(100% HP)";
+        Health.LowMessage 25, "Picked up an Full Recovery Kit that you REALLY need! (100% HP)";
     }
     States
     {
@@ -190,7 +190,6 @@ class W3DDogFood: Health
         //$Category Health and Armor
         +COUNTITEM;
         Inventory.Amount 5;
-        Inventory.MaxAmount 200;
         Inventory.PickupMessage "Ate some dog food." ;
     }
     States

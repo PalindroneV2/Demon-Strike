@@ -14,16 +14,6 @@ maps
 			resource0
 			{
 				type = 0;
-				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\assets\\textura\\OTEX\\OTEX_1.1.WAD";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-				requiredarchives = "";
-			}
-			
-			resource1
-			{
-				type = 0;
 				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\assets\\textura\\32in24\\32in24-15_tex_v2.wad";
 				option1 = 0;
 				option2 = 0;
@@ -31,8 +21,8 @@ maps
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "ODMNDA04";
-		defaultceiltexture = "OBASEC00";
+		defaultfloortexture = "GRAYFLA7";
+		defaultceiltexture = "CEIL5_G4";
 		defaulttoptexture = "GRAYVRA2";
 		defaultwalltexture = "GRAYVRA2";
 		defaultbottomtexture = "GRAYVRA2";
@@ -48,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 136.7542f;
-		viewpositiony = 247.6589f;
-		viewscale = 0.6499957f;
+		viewpositionx = 852.9131f;
+		viewpositiony = -1759.357f;
+		viewscale = 4.078614f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid

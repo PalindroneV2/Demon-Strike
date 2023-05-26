@@ -7,7 +7,7 @@ maps
 	
 	MMAP01
 	{
-		viewpositionx = -1273.883f;
+		viewpositionx = 90.68049f;
 		
 		grid
 		{
@@ -43,10 +43,10 @@ maps
 		defaultbottomtexture = "STARTAN2";
 		defaulttoptexture = "STARTAN2";
 		defaultwalltexture = "STARTAN2";
-		viewpositiony = 2443.15f;
+		viewpositiony = 374.9124f;
 		overrideceilheight = false;
 		defaultceiltexture = "CEIL5_1";
-		viewscale = 1.427512f;
+		viewscale = 0.3844705f;
 		
 		reloadresourcepostcommand
 		{
@@ -64,15 +64,6 @@ maps
 		custombrightness = 196;
 		uselongtexturenames = false;
 		overridefloorheight = false;
-		
-		fieldtypes
-		{
-			
-			sector
-			{
-				user_managed_3d_floor = 3;
-			}
-		}
 		overridefloortexture = false;
 		overrideceiltexture = false;
 		scriptcompiler = "zdoom_acs.cfg";
@@ -93,5 +84,14 @@ maps
 		}
 		customfloorheight = 0;
 		overridetoptexture = false;
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				user_managed_3d_floor = 3;
+			}
+		}
 	}
 }

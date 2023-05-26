@@ -2,10 +2,11 @@ class EnemyDog : MBFHelperDog
 {
 	Default
 	{
-		Health 40;
+		Health 30;
 		Tag "Nazi Hound";
        //$Category Monsters
 		Species "Nazi";
+		Speed 16;
 		Obituary "You were mauled to death by a Nazi Hound";
 		+DONTHARMSPECIES
 		+NOINFIGHTSPECIES
