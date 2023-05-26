@@ -7,7 +7,7 @@ maps
 	
 	MMAP31
 	{
-		viewpositionx = 1897.257f;
+		viewpositionx = 2142.228f;
 		
 		grid
 		{
@@ -43,10 +43,10 @@ maps
 		defaultbottomtexture = "W3DBLU01";
 		defaulttoptexture = "W3DBLU01";
 		defaultwalltexture = "W3DBLU01";
-		viewpositiony = -246.1642f;
+		viewpositiony = -594.3188f;
 		overrideceilheight = false;
 		defaultceiltexture = "CEIL3_5";
-		viewscale = 5.70027f;
+		viewscale = 0.5375332f;
 		
 		reloadresourcepostcommand
 		{
@@ -113,6 +113,7 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
+				caretposition = 25;
 				activetab = true;
 			}
 		}

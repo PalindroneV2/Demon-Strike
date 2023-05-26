@@ -55,8 +55,7 @@ script 6 (void)
 	Log(s:"Find a way to kill all of those monsters.");
 	Delay(105);
 	PlaySound(1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
-	// Log(s:"Their eggheads should have some contingency plan somewhere...");
-	Log(s:"Peepeepoopoo");
+	Log(s:"Their eggheads should have some contingency plan somewhere...");
 	Delay(105);
 	SetLineTexture(11, SIDE_FRONT, TEXTURE_BOTTOM,"W3DCOM01");
 	Door_Open(25,16);
