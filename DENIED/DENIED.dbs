@@ -20,6 +20,16 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource1
+			{
+				type = 0;
+				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\assets\\textura\\DevTex_001.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "GRAYFLA7";
 		defaultceiltexture = "CEIL5_G4";
@@ -38,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 852.9131f;
-		viewpositiony = -1759.357f;
-		viewscale = 4.078614f;
+		viewpositionx = 2737.74f;
+		viewpositiony = -1845.765f;
+		viewscale = 2.41334f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -104,8 +114,90 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
+				caretposition = 552;
 				activetab = true;
 			}
 		}
+	}
+	
+	MAP01
+	{
+		viewpositionx = 1573.268f;
+		
+		grid
+		{
+			backsource = 0;
+			backscaley = 100;
+			backscalex = 100;
+			gridsize = 32;
+			gridoriginx = 0;
+			background = "";
+			backoffsetx = 0;
+			gridrotate = 0;
+			gridoriginy = 0;
+			backoffsety = 0;
+		}
+		overridebottomtexture = false;
+		overridemiddletexture = false;
+		customfloorheight = 0;
+		
+		testprecommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		overridebrightness = false;
+		
+		testpostcommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		defaultfloortexture = "GRAYFLA7";
+		defaultbottomtexture = "GRAYVRA2";
+		defaulttoptexture = "GRAYVRA2";
+		defaultwalltexture = "GRAYVRA2";
+		viewpositiony = -2145.315f;
+		overrideceilheight = false;
+		viewscale = 0.2256762f;
+		
+		reloadresourcepostcommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		
+		reloadresourceprecommand
+		{
+			exitcodeiserror = true;
+			autocloseonsuccess = true;
+			stderriserror = true;
+		}
+		custombrightness = 196;
+		uselongtexturenames = false;
+		overridefloorheight = false;
+		defaultceiltexture = "CEIL5_G4";
+		overridefloortexture = false;
+		overrideceiltexture = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		customceilheight = 128;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 0;
+				location = "C:\\Users\\goopl\\Desktop\\Lambda\\DOOM\\assets\\textura\\32in24\\32in24-15_tex_v2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		overridetoptexture = false;
 	}
 }

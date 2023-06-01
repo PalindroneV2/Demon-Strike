@@ -1,6 +1,6 @@
 map HUBMAP "Startan Base"
 {
-	/* next="MMAP01" */
+	next = "HUBMAP"
 	secretnext="MAP29"
 	titlepatch = "THUBMAP"
 	sky1="RSKY1"
@@ -16,7 +16,7 @@ map HUBMAP "Startan Base"
 
 map MMAP01 "Infected Flesh"
 {
-	/* next = "MMAP02" */
+	next = "HUBMAP"
 	secretnext = "MMAP31"
 	titlepatch = "T_MAP01"
     sky1 = "RSKY3"
@@ -31,7 +31,7 @@ map MMAP01 "Infected Flesh"
 
 map MMAP02 "Volcanic Fortress"
 {
-	/* next = "MAP03" */
+	next = "HUBMAP"
 	secretnext = "MMAP31"
 	titlepatch = "T_MAP02"
     sky1 = "RSKY3"
@@ -59,26 +59,39 @@ cluster 22
 	"bricks of a tiny prison cell.",
 	"Your weapons and ammo are gone but not",
 	"your determination to end this nightmare..."
-	/* exittext =
+	exittext =
  	"You are in luck, another tear in",
 	"space time allows you to finally return to",
 	"your time. You hope that whatever you",
 	"did helping out the Allies with their little",
 	"demon problem didn't do much harm to the",
-	"timeline..." */
+	"timeline..."
 }
 
 map MMAP31 "Jamais Vu"
 {
 	ResetHealth
 	ResetInventory
-	next = "MAP32"
-	secretnext = "MAP32"
-	titlepatch = "T_MAP31"
+	next = "MMAP32"
+	secretnext = "MMAP32"
     sky1 = "RSKY1"
 	cluster = 22
 	par = 300
 	music = "D_EVIL"
+	Author = "Palindrone"
+	levelnum = 131
+}
+
+map MMAP32 "Raiders"
+{
+	ResetHealth
+	ResetInventory
+	next = "HUBMAP"
+	secretnext = "MAP01"
+    sky1 = "SKYD14"
+	cluster = 22
+	par = 300
+	music = "D_LEGION"
 	Author = "Palindrone"
 	levelnum = 131
 }

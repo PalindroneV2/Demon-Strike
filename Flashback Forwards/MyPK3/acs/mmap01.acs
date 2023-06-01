@@ -130,7 +130,7 @@ script 15 (void)
 	if(ThingCount(T_NONE,115) == 0) {
 		PlaySound (1000, "misc/chat", CHAN_5, 1.0, FALSE, 0);
 		PlaySound (1000, "misc/secret", CHAN_5, 1.0, FALSE, 0);
-		HudMessage(s:"A care package arrived!"; HUDMSG_PLAIN, 1, CR_WHITE, 0.5, 0.1, 2.0);
+		HudMessage(s:"The Secret Exit is Open!"; HUDMSG_PLAIN, 1, CR_WHITE, 0.5, 0.1, 2.0);
 		Door_Open(49,16);
 	}
 }

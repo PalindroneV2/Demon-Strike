@@ -67,7 +67,7 @@ class NaziGuard : WolfensteinSS
 		Goto See ;
 	}
 }
-class WaffenSS : WolfensteinSS replaces WolfensteinSS
+class WaffenSS : WolfensteinSS
 {
 	Default
 	{
@@ -130,15 +130,70 @@ class WaffenSS : WolfensteinSS replaces WolfensteinSS
 		Goto See ;
 	}
 }
+class NaziOfficer : WolfensteinSS
+{
+	Default
+	{
+		Health 50;
+		Radius 20;
+		Height 56;
+		Speed 10;
+		PainChance 150;
+		Monster;
+		+FLOORCLIP
+		SeeSound "naziofficer/sight";
+		PainSound "wolfss/pain";
+		DeathSound "naziofficer/death";
+		ActiveSound "wolfss/active";
+		AttackSound "wolfss/attack";
+		Obituary "You were executed  by a Nazi Officer.";
+		Tag "Nazi Officer";
+       //$Category Monsters
+		Dropitem "Clip";
+		Species "Nazi";
+		+DONTHARMSPECIES
+		+NOINFIGHTSPECIES
+	}
+	States
+	{
+	Spawn:
+		NAZO AB 10 A_Look;
+		Loop;
+	See:
+		NAZO AABBCCDD 3 A_Chase;
+		Loop;
+	Missile:
+		NAZO E 7 A_FaceTarget;
+		NAZO G 3 BRIGHT A_CPosAttack;
+		NAZO F 5 A_FaceTarget;
+		NAZO F 2 A_CPosRefire;
+		Goto Missile+1;
+	Pain:
+		NAZO H 3;
+		NAZO H 3 A_Pain;
+		Goto See;
+	Death:
+		NAZO I 5;
+		NAZO J 5 A_Scream;
+		NAZO K 5 A_NoBlocking;
+		NAZO L 5;
+		NAZO M -1;
+		Stop;
+	Raise:
+		NAZO M 5;
+		NAZO LKJI 5;
+		Goto See ;
+	}
+}
 class PlasmaSS : WolfensteinSS
 {
 	Default
 	{
 	   Health 75;
 		PainChance 125;
-		SeeSound "wolfss/sight";
+		SeeSound "plasmass/sight";
 		PainSound "wolfss/pain";
-		DeathSound "wolfss/death";
+		DeathSound "plasmass/death";
 		ActiveSound "wolfss/active";
 		AttackSound "baby/attack";
 		Obituary "You were melted by a Plasmawaffen SS.";

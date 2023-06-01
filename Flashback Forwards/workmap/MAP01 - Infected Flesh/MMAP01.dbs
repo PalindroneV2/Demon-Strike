@@ -7,7 +7,7 @@ maps
 	
 	MMAP01
 	{
-		viewpositionx = 90.68049f;
+		viewpositionx = -198.3398f;
 		
 		grid
 		{
@@ -43,10 +43,10 @@ maps
 		defaultbottomtexture = "STARTAN2";
 		defaulttoptexture = "STARTAN2";
 		defaultwalltexture = "STARTAN2";
-		viewpositiony = 374.9124f;
+		viewpositiony = 560.0384f;
 		overrideceilheight = false;
 		defaultceiltexture = "CEIL5_1";
-		viewscale = 0.3844705f;
+		viewscale = 0.174998f;
 		
 		reloadresourcepostcommand
 		{
@@ -91,6 +91,30 @@ maps
 			sector
 			{
 				user_managed_3d_floor = 3;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 40;
+				activetab = true;
 			}
 		}
 	}
