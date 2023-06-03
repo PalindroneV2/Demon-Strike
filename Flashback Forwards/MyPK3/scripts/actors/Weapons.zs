@@ -26,7 +26,7 @@ class MP40 : DoomWeapon
 		MP40 A 1 A_Raise;
 		Loop;
 	Fire:
-		MP40 B 1 A_FireBullets(5, 4, 1, 5, "BulletPuff");
+		MP40 B 1 A_MP40Fire;
 		MP40 B 0 A_GunFlash;
 		MP40 D 1 A_SetPitch (pitch-0.4);
 		MP40 CA 1 A_SetPitch (pitch+0.2);
@@ -42,6 +42,35 @@ class MP40 : DoomWeapon
 		Stop;
 	}
 }
+
+extend class MP40
+{
+	action void A_MP40Fire()
+	{
+		Name NewAmmoClassName = 'TangoBulletClip';
+		Class<Ammo> NewAmmoClass = NewAmmoClassName;
+		if(NewAmmoClass)
+		{
+			A_FireBullets(5, 4, 1, 12, "BulletPuff",FBF_USEAMMO|FBF_NORANDOM);
+		}else{
+			A_FireBullets(5, 4, 1, 5, "BulletPuff");
+		}
+	}
+	override void PostBeginPlay()
+	{
+		Name NewAmmoClassName = 'TangoBulletClip';
+		Class<Ammo> NewAmmoClass = NewAmmoClassName;
+		if(NewAmmoClass)
+		{
+			AmmoType1 = NewAmmoClass;
+			if(Owner)
+			{
+            	Ammo1 = Ammo(Owner.FindInventory(NewAmmoClass));
+			}
+		}
+	}
+}
+
 class Handgun : Pistol replaces Pistol
 {
  	Default
@@ -102,10 +131,10 @@ class Minigun : DoomWeapon replaces Chaingun
 		CHGG A 1 A_WeaponReady;
 		Loop;
 	Deselect:
-		CHGG A 1 A_Lower;
+		CHGG A 1 A_Lower(12);
 		Loop;
 	Select:
-		CHGG A 1 A_Raise;
+		CHGG A 1 A_Raise(12);
 		Loop;
 	Fire:
 		CHGG A 0 A_StartSound("weapons/chngun", CHAN_WEAPON);

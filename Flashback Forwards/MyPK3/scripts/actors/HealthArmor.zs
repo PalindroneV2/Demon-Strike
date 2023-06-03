@@ -114,7 +114,7 @@ class EnchantedArmor : BasicArmorPickup
        //$Category Health and Armor
         Radius 20;
         Height 16;
-        Inventory.PickupMessage "Behold! You picked up the Encahnted Armor! (100% DT)" ;
+        Inventory.PickupMessage "Behold! You picked up the Enchanted Armor! (100% DT)" ;
         Inventory.Icon "ARM7A0";
         Armor.SavePercent 100;
         Armor.SaveAmount 200;

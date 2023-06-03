@@ -9,6 +9,7 @@ Episode HUBMAP
 
 GameInfo {
 	PlayerClasses = "DoomPlayerNew"
+	AddEventHadlers="SC3On"
 }
 DoomEdNums
 {

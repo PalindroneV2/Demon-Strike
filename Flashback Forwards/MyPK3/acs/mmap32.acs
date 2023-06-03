@@ -1,0 +1,11 @@
+#include "zcommon.acs"
+
+script 1 (void){//reveal final teleporter
+    ChangeFloor(12,"PTEXPTP1");
+    ChangeFloor(13,"PTEXPTP1");
+    Floor_RaiseByValue(12,128,16);
+    Floor_RaiseByValue(13,128,8);
+    SetLineActivation(2,SPAC_Cross);
+    SetLineSpecial(2,243);
+    SpawnSpot("TeleportFog",1);
+}  
